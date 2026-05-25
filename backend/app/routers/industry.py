@@ -7,7 +7,7 @@ import json
 
 router = APIRouter()
 
-HUNTER_API_KEY = os.getenv("HUNTER_API_KEY", "7ac59ee42947d70a2c46127647ef118f52ab018c")
+HUNTER_API_KEY = os.getenv("HUNTER_API_KEY")
 
 VAISHVI_BIO = """
 Name: Vaishvi Himanshubhai Patel
