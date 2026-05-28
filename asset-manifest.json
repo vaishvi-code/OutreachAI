@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OutreachAI/static/css/main.e6c13ad2.css",
+    "main.js": "/OutreachAI/static/js/main.409f0be8.js",
+    "static/js/453.20359781.chunk.js": "/OutreachAI/static/js/453.20359781.chunk.js",
+    "index.html": "/OutreachAI/index.html",
+    "main.e6c13ad2.css.map": "/OutreachAI/static/css/main.e6c13ad2.css.map",
+    "main.409f0be8.js.map": "/OutreachAI/static/js/main.409f0be8.js.map",
+    "453.20359781.chunk.js.map": "/OutreachAI/static/js/453.20359781.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.409f0be8.js"
+  ]
+}
