@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://outreachai-production-84fa.up.railway.app";
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
@@ -143,7 +143,7 @@ function ProfessorTab({ apiBase }) {
               <div className="scraped-info-title">Auto-gathered professor info</div>
               {result.scraped_info.research_areas && <div className="scraped-row"><span className="scraped-label">Research:</span><span className="scraped-value">{result.scraped_info.research_areas}</span></div>}
               {result.scraped_info.notable_work && <div className="scraped-row"><span className="scraped-label">Notable work:</span><span className="scraped-value">{result.scraped_info.notable_work}</span></div>}
-              {result.recipient_email && <div className="scraped-row"><span className="scraped-label">Email:</span><span className="scraped-value" style={{color:"#6c63ff"}}>{result.recipient_email}</span></div>}
+              {result.recipient_email && <div className="scraped-row"><span className="scraped-label">Email:</span><span className="scraped-value" style={{ color: "#6c63ff" }}>{result.recipient_email}</span></div>}
             </div>
           )}
           <div className="subject-line">📌 {result.subject}</div>
@@ -250,7 +250,7 @@ function HistoryTab({ apiBase }) {
     return new Date(ts).toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
   };
 
-  if (loading) return <div className="empty-state"><div className="spinner" style={{margin:"0 auto"}} /></div>;
+  if (loading) return <div className="empty-state"><div className="spinner" style={{ margin: "0 auto" }} /></div>;
   if (!history.length) return <div className="empty-state"><div className="empty-icon">📭</div><div>No outreach history yet.</div></div>;
 
   return (
